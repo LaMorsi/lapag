@@ -1,0 +1,93 @@
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #3f51b5;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0; 
+    color: #000000;
+    text-align: center; 
+    font-size: 32px; 
+}
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+header nav {
+    margin-top: 20px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.textos-header {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+}
+main {
+    padding: 20px;
+}
+.a1 {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+.a2 {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+.a2 h3 {
+    color: #3f51b5;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.a2 p {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.a2 p:last-child {
+    border-bottom: none;
+}
+
+/* Estilos para centrar la imagen verticalmente */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.tema {
+    color: #9fa3b9;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+.tema a {
+    color: #9babe0;
+    text-decoration: none;
+}

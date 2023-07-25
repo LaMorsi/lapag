@@ -1,0 +1,129 @@
+ body {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #3f51b5;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            margin: 0; 
+            color:#000000;
+            text-align: center; 
+            font-size: 32px; 
+        }
+
+        header h3 {
+            margin: 0; 
+            color:#302f2f;
+            text-align: center; 
+            font-size: 20px; 
+        }
+
+        
+        header nav {
+            text-align: right;
+            margin-top: 15px;
+        }
+        header nav > a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .textos-header {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        header .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .cajas-de-mrd {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .caja {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .caja1 {
+            width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .caja1 h3 {
+            color: #ffffff; 
+            margin: 0;
+            padding: 10px;
+            background-color: #4d0686;
+            border-radius: 8px 8px 0 0;
+        }
+        .caja1 p {
+            margin: 0;
+            padding: 15px;
+        }
+
+        .caja-ia {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        .caja-ia img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .caja-ia h3 {
+            color: #FF7F50;
+            margin-bottom: 10px;
+        }
+
+        .btn.btn-blue {
+            border-color: #2980b9;
+            color: #2980b9;
+            background-color: #2980b9;
+        }
+        
+       
+        
+        .btn.btn-green {
+            border-color: #27ae60;
+            color: #27ae60;
+            background-color: #27ae60;
+        }
+        
+        
+        
+        .btn.btn-red {
+            border-color: #c0392b;
+            color: #c0392b;
+            background-color: #c0392b;
+        }
+        
+       

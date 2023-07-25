@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://scontent.fsal11-1.fna.fbcdn.net/v/t31.18172-8/10914847_593067377493803_3676244565330172897_o.jpg?_nc_cat=109&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_ohc=5sgQ5ijSrJoAX-tL4zo&_nc_ht=scontent.fsal11-1.fna&oh=00_AfDf9kN1c2maX46FaVJ8MmI0FiCgJk9cDiARxWOwqLiFlg&oe=64DC06C4">
+    <link rel="stylesheet" href="css/bot.css">
+    <title>La pagina esta</title>
+</head>
+<header class="clase">
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+</header>
+<body>
+    <h1>Una calculadora</h1>
+    
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1" name="num1">
+
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2" name="num2">
+
+    <label for="operacion">Operación:</label>
+    <select id="operacion" name="operacion">
+        <option value="+">Suma</option>
+        <option value="-">Resta</option>
+        <option value="*">Multiplicación</option>
+        <option value="/">División</option>
+    </select>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function realizarOperacion(operacion, num1, num2) {
+            if (isNaN(num1) || isNaN(num2)) {
+                return "Hey, ocupo 2 valores para funcionar.";
+            }
+
+            if (operacion === "+") {
+                return num1 + num2;
+            } else if (operacion === "-") {
+                return num1 - num2;
+            } else if (operacion === "*") {
+                return num1 * num2;
+            } else if (operacion === "/") {
+                if (num2 !== 0) {
+                    return num1 / num2;
+                } else {
+                    return "Pendejo, no podes dividir cero con cero";
+                }
+            } else {
+                return "No pude hacer la operacion, perdon ijij";
+            }
+        }
+
+        function calcular() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const operacion = document.getElementById("operacion").value;
+            const resultado = realizarOperacion(operacion, num1, num2);
+            document.getElementById("resultado").innerText = "Resultado: " + resultado;
+        }
+    </script>
+</body>
+</html>
